@@ -6,8 +6,14 @@ class Person:
     def __str__(self):
         return "{} ({})".format(self.name, self.age)
 
+    def __repr__(self):  # Option 2
+        return "{} ({})".format(self.name, self.age)
+
 
 p1 = Person("Jane", 19)
 print(p1)
 people = [Person("Alexa", 21), Person("Siri", 25)]
-print(people)
+print(people)  # Problem output!
+print([str(person) for person in people])  # Option 1
+
+
