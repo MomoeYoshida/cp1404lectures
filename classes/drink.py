@@ -38,7 +38,8 @@ def run_tests():
         if drink.is_alcoholic():
             count_alcoholic_drinks += 1
             total_alcohol += drink.get_alcohol_volume()
-    print("You drank {} drinks ({} were alcoholic for a total of {} mL alcohol".format(len(drinks), count_alcoholic_drinks, total_alcohol))
+    print("You drank {} drinks ({} were alcoholic for a total of {} mL alcohol)"
+          .format(len(drinks), count_alcoholic_drinks, total_alcohol))
 
 
 if __name__ == '__main__':

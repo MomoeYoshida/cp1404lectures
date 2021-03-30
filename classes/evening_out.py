@@ -21,8 +21,9 @@ def main():
         print(my_drinks)
         print(MENU)
         menu_choice = input("> ").lower()
-    print("You drank {} drinks ({} were alcoholic for a total of {} mL alcohol"
-          .format(len(my_drinks), my_drinks.get_number_alcoholic(), my_drinks.get_alcohol_volume()))
+    print("You drank {} drinks ({} were alcoholic for a total of {} mL alcohol), which cost ${:.2f}"
+          .format(len(my_drinks), my_drinks.get_number_alcoholic(), my_drinks.get_alcohol_volume(),
+                  my_drinks.get_total_price()))
 
 
 def display_available_drinks(drinks):
