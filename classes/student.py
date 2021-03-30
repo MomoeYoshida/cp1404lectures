@@ -21,6 +21,7 @@ first_name = input("First name: ")
 last_name = input("Last name: ")
 student_id = int(input("ID: "))
 s1 = Student(first_name, last_name, student_id)
+print(s1)
 print(s1.first_name, "has ID", s1.id)
 
 if __name__ == '__main__':
