@@ -1,2 +1,2 @@
 # cp1404lectures
-Lecture Notes from lectures
+Python codes taught in lecture recordings
